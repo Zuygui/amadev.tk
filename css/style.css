@@ -1,0 +1,286 @@
+body {
+    margin: 0 auto;
+    font-family: Calibri, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Tête de page */
+section.home-top {
+    height: 80vh;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    color: white;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 30px;
+}
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 400px;
+    margin-left: 30px;
+}
+
+nav.nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+div.title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 64px;
+    margin-left: 12px;
+}
+
+
+p.about {
+    margin: 15px;
+}
+
+/* Liens animés */
+section.links {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.wrapper {
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    place-items: center;
+    font-family: Calibri, sans-serif;
+}
+
+.wrapper .button {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    /* float: left; */
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 50px;
+    text-align: left;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover {
+    width: 200px;
+}
+
+.section-title {
+    font-size: 50px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+    position: relative;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    background-color: #fd8802;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.wrapper .button .icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50px;
+    line-height: 60px;
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+    background-color: rgb(27, 159, 241);
+    color: rgb(255, 255, 255);
+}
+
+.wrapper .button:nth-child(2):hover .icon {
+    background-color: rgb(50, 50, 50);
+    color: rgb(255, 255, 255);
+}
+
+.wrapper .button:nth-child(3):hover .icon {
+    background-color: rgb(113, 135, 218);
+    color: rgb(255, 255, 255);
+}
+
+.wrapper .button:nth-child(1):hover span {
+    color: rgb(27, 159, 241);
+}
+
+.wrapper .button:nth-child(2):hover span a {
+    color: rgb(50, 50, 50);
+}
+
+.wrapper .button:nth-child(3):hover span a {
+    color: rgb(113, 135, 218);
+}
+
+.wrapper .button .icon a {
+    color: rgb(0, 0, 0);
+}
+
+a { text-decoration: none; }
+
+.wrapper .button:hover .icon a {
+    color: rgb(255, 255, 255);
+}
+
+.wrapper .button .icon i {
+    font-size: 32px;
+    line-height: 60px;
+    transition: 0.3s;
+}
+
+.wrapper .button span {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+}
+
+/* pied de page */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+}
+
+footer a.cgv {
+    text-decoration: none;
+    color: black;
+}
+
+/* titre annimé */
+div.title {
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+div.title p {
+    font-family: Consolas, monospace;
+    font-size: 100px;
+    font-style: normal;
+    position: relative;
+}
+
+div.title i {
+    font-family: "Calibri Light", Calibri, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    position: relative;
+}
+
+div.title p::before, div.title p::after {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+div.title p::before {
+    background: rgb(23, 25, 29);
+    animation: typewriter 2s steps(7) forwards;
+}
+
+div.title p::after {
+    width: 0.0625em;
+    background-color: white;
+    animation: typewriter 2s steps(7) forwards, blink 1s steps(7) infinite;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background-color: transparent;
+    }
+}
+
+/* sous titre animé */
+
+div.sub-title {
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+div.sub-title p {
+    font-family: Consolas, monospace;
+    font-size: 45px;
+    font-style: normal;
+    position: relative;
+}
+
+div.sub-title i {
+    font-family: "Calibri Light", Calibri, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    position: relative;
+}
+
+div.sub-title p::before, div.title p::after {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+div.sub-title p::before {
+    background: rgb(23, 25, 29);
+    animation: typewriter 2s steps(7) forwards;
+}
+
+div.sub-title p::after {
+    width: 0.0625em;
+    background-color: white;
+    animation: typewriter 2s steps(7) forwards, blink 1s steps(7) infinite;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background-color: transparent;
+    }
+}
